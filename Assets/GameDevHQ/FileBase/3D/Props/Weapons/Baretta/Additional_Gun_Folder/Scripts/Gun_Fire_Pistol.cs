@@ -35,32 +35,32 @@ public class Gun_Fire_Pistol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            Debug.Log("Shoot gun");
-            if (FullAuto == false)
-            {
-                _anim.SetTrigger("Fire");
-            }
+        //if (Input.GetKeyDown(KeyCode.Mouse0))
+        //{
+        //    Debug.Log("Shoot gun");
+        //    if (FullAuto == false)
+        //    {
+        //        _anim.SetTrigger("Fire");
+        //    }
 
-            if (FullAuto == true)
-            {
-                _anim.SetBool("Automatic_Fire", true);
-            }
-        }
+        //    if (FullAuto == true)
+        //    {
+        //        _anim.SetBool("Automatic_Fire", true);
+        //    }
+        //}
  
-        if (Input.GetKeyUp(KeyCode.Mouse0))
-        {
-            if (FullAuto == true)
-            {
-                _anim.SetBool("Automatic_Fire", false);
-            }
+        //if (Input.GetKeyUp(KeyCode.Mouse0))
+        //{
+        //    if (FullAuto == true)
+        //    {
+        //        _anim.SetBool("Automatic_Fire", false);
+        //    }
 
-            if (FullAuto == false)
-            {
-                _anim.SetBool("Fire", false);
-            }
-        }
+        //    if (FullAuto == false)
+        //    {
+        //        _anim.SetBool("Fire", false);
+        //    }
+        //}
     }
 
     public void FireGunParticles()
